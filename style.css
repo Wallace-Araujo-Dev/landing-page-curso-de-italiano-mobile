@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Caveat:wght@400..700&family=Indie+Flower&family=Limelight&family=Monomaniac+One&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    z-index: -1;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -10px;
+}
+
+.logo p {
+    font-family: "Monomaniac One", sans-serif;
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.logo1,
+.logo4,
+.logo5 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo2 {
+    position: absolute;
+    top: 30px;
+    left: -6px;
+}
+
+.logo2 p {
+    font-size: 1.5rem;
+}
+
+.logo3 {
+    border: solid .5px #000;
+    height: 4px;
+    width: calc(100% - 12px);
+    display: flex;
+    position: absolute;
+    top: 50px;
+    margin-left: 6px;
+    background: #CE2B37;
+}
+
+.logo3 .verde {
+    height: 100%;
+    width: 33.33%;
+    background: #009246;
+}
+
+.logo3 .branco {
+    height: 100%;
+    width: 33.33%;
+    background: #fff;
+}
+
+.logo3 .vermelho {
+    height: 100%;
+    width: 33.34%;
+}
+
+.logo4 {
+    top: 38px;
+}
+
+.logo5 {
+    position: absolute;
+    top: 79px;
+    width: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo5 p {
+    font-size: .85rem;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    position: relative;
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.vertical .container:nth-child(2) {
+    position: absolute;
+    top: 100px;
+    height: calc(95vh - 100px);
+}
+
+.vertical {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centralizador {
+    width: 95%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+}
+
+.fundo1 {
+    background: #CE2B37;
+}
+
+.fundo2 {
+    background: #009246;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+main {
+    height: 100%;
+    display: flex;
+}
+
+main .texto {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+main .texto .destaque {
+    text-shadow: 1px 1px 0px #009246,
+        -1px -1px 0px #009246,
+        -1px 1px 0px #009246,
+        1px -1px 0px #009246;
+}
+
+button {
+    color: #fff;
+    text-shadow: 0px 0px 0px #000;
+    border: none;
+    display: block;
+    font-size: 1.2rem;
+    width: 290px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 8px;
+    position: relative;
+    background-image: linear-gradient(#002e16, #009246 80%, #52c58a);
+}
+
+button::before {
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 60px;
+    border-radius: 8px;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+    background-image: linear-gradient(#009246, #002e16 95%, #009246);
+    box-shadow: 0px 3px 10px #000;
+}
+
+button span:nth-child(6),
+button span:nth-child(14) {
+    margin-left: 3px;
+}
+
+.saiba {
+    display: none;
+}
+
+main .fotos {
+    display: none;
+    margin-bottom: 50px;
+}
+
+main .fotos img {
+    width: 230px;
+    height: 143px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px #000;
+}
+
+main .fotos img:nth-child(1) {
+    rotate: 15deg;
+    translate: 30px;
+}
+
+main .fotos img:nth-child(2) {
+    rotate: 5deg;
+}
+
+main .fotos img:nth-child(3) {
+    rotate: -15deg;
+    translate: -30px;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.apresentacao .card {
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.card, .sobre img {
+    background: linear-gradient(90deg, rgba(0, 146, 70, .2), rgba(255, 255, 255, .2), rgba(206, 43, 55, .2));
+    border: solid 3px #009246;
+    border-radius: 8px;
+    box-shadow: 5px 5px 0px #CE2B37,
+        0px 0px 20px #444;
+    position: relative;
+}
+
+.card::before {
+    background: #fff;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.card p {
+    color: #000;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.beneficios .card {
+    width: 250px;
+    height: 160px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.beneficios .card img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.beneficios .card .texto {
+    position: absolute;
+    bottom: 0;
+    text-shadow: 1px 1px 0px #fff,
+        -1px -1px 0px #fff,
+        1px 1px 0px #fff,
+        -1px 1px 0px #fff,
+        1px 1px 0px #fff,
+        1px -1px 0px #fff;
+}
+
+.prova {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.prova .card {
+    padding: 10px 10px 40px 10px;
+}
+
+.prova .card p,
+.brindes .card p {
+    font-size: .8rem;
+}
+
+.prova .card img {
+    width: 100px;
+    border: solid 0px #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.brindes {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.depoimentos {
+    margin-top: 30px;
+}
+
+.brindes .card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.brindes .card:nth-child(4) p {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.brindes .card img {
+    width: 100px;
+    border: solid 0px #fff;
+    border-radius: 50%;
+}
+
+.depoimentos {
+    margin-bottom: 40px;
+}
+
+.sobre img {
+    width: 180px;
+    margin: 0 auto;
+}
+
+.oferta, .sobre {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.oferta .card h2 {
+    color: #000;
+}
+
+.oferta .card {
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.oferta .card p:nth-child(3) {
+    font-size: 3rem;
+}
+
+.oferta .card p:nth-child(4) {
+    font-size: 1rem;
+}
+
+.oferta .card p:nth-child(5) {
+    padding-bottom: 10px;
+}
+
+.oferta .card p:nth-child(6) {
+    font-size: .5rem;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
+
+.subOferta {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ultimo .centralizador {
+    height: 100%;
+    min-height: 95vh;
+}
+
+.lista {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.lista h2 {
+    text-align: center;
+}
+
+.menu-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowwrap;
+    border: 0;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu:nth-child(2) {
+    margin-top: 20px;
+}
+
+.menu li {
+    border-bottom: 1px solid #fff;
+}
+
+.menu-label {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-label:hover {
+    background-color: #009246;
+}
+
+.arrow {
+    margin: 0 15px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    transform: rotate(-45deg);
+    transition: transform 0.3s;
+}
+
+.menu-label:has(.menu-toggle:checked) .arrow,
+.menu-label:has(+.submenu:focus-within) .arrow {
+    transform: rotate(45deg);
+}
+
+.submenu {
+    list-style: none;
+    padding-left: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+}
+
+.submenu li:last-child {
+    border: none;
+}
+
+.menu-label:has(.menu-toggle:checked)+.submenu,
+.menu-label:has(+.submenu:focus-within)+.submenu {
+    max-height: 500px;
+}
+
+.menu-label:has(.menu-toggle:focus) {
+    outline: 1px solid #fff;
+    outline-offset: -0px;
+}
+
+.submenu p {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.ultimo {
+    height: auto;
+    min-height: 95vh;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        scale: 1.5;
+        top: 0;
+    }
+
+    .vertical .container:nth-child(2) {
+        top: 130px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .fotos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .apresentacao .card {
+        padding: 15px;
+        margin: 50px 0;
+    }
+
+    .beneficios .card {
+        width: 300px;
+        height: 192px;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+    }
+    
+    .beneficios .card img {
+        width: 300px;
+        object-fit: cover;
+    }
+
+    .beneficios .texto {
+        width: 100%;
+    }
+
+    .prova {
+        margin: 40px;
+    }
+    
+    .prova .card {
+        padding: 20px 20px 40px 20px;
+    }
+    
+    .prova .card p,
+    .brindes .card p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .texto {
+        width: 50%;
+    }
+
+    main .fotos {
+        flex-direction: column;
+    }
+    
+    main .fotos img {
+        width: 400px;
+        height: 250px;
+        border-radius: 8px;
+    }
+    
+    main .fotos img:nth-child(1) {
+        rotate: 15deg;
+        translate: 50px 30px;
+    }
+    
+    main .fotos img:nth-child(2) {
+        rotate: 5deg;
+        translate: 30px 30px;
+    }
+    
+    main .fotos img:nth-child(3) {
+        rotate: -15deg;
+        translate: 30px;
+    }
+
+    .beneficios .card {
+        width: 350px;
+        height: 224px;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+    }
+    
+    .beneficios .card img {
+        width: 350px;
+        object-fit: cover;
+    }
+
+    .sobre img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main .fotos {
+        padding-left: 50px;
+    }
+
+    .beneficios {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .beneficios .card {
+        margin: 10px;
+    }
+
+    .beneficios .card:nth-child(1),
+    .beneficios .card:nth-child(3) {
+        margin-top: 200px;
+    }
+
+    .beneficios .card:nth-child(2) {
+        margin-top: -200px;
+    }
+
+    .oferta {
+        width: 100%;
+    }
+
+    .subOferta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .oferta .card {
+        width: 300px;
+        height: 400px;
+    }
+}
